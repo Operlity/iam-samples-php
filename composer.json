@@ -1,0 +1,13 @@
+{
+    "name": "operlity/php-web-app",
+    "description": "Sample PHP application integrated with IdentityHub using OIDC",
+    "type": "project",
+    "require": {
+        "jumbojett/openid-connect-php": "^0.9.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
