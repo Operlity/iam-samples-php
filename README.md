@@ -47,7 +47,7 @@ Before you begin, ensure you have the following installed:
 - **Node.js** - For HTTPS proxy ([Download](https://nodejs.org/))
 
 ### IdentityHub Account
-- Access to an IdentityHub instance (e.g., https://id.demo.operlity.com)
+- Access to an IdentityHub instance (e.g., https://ogsiamapp.azurewebsites.net)
 - Registered OAuth 2.0 client with:
   - Client ID
   - Client Secret
@@ -98,12 +98,12 @@ Edit `config.php` and update with your IdentityHub credentials:
 
 ```php
 return [
-    'issuer' => 'https://id.demo.operlity.com',
+    'issuer' => 'https://ogsiamapp.azurewebsites.net',
     'client_id' => 'your-client-id-here',
     'client_secret' => 'your-client-secret-here',
     'redirect_uri' => 'https://localhost:4500/signin-oidc',
     'scopes' => ['openid', 'profile', 'email'],
-    'end_session_endpoint' => 'https://id.demo.operlity.com/connect/endsession'
+    'end_session_endpoint' => 'https://ogsiamapp.azurewebsites.net/connect/endsession'
 ];
 ```
 

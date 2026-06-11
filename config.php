@@ -4,10 +4,10 @@
  */
 
 return [
-    'issuer' => 'https://id.demo.operlity.com',
-    'client_id' => 'ee772e0e-4f95-48a5-8bbb-f2adb0696109',
-    'client_secret' => 'fU3OTIb4zT0bzyItYvq6gELBF909uiKASDJBHL1M6c8=',
-    'redirect_uri' => 'https://localhost:4500/signin-oidc',
+    'issuer' => 'https://ogsiamapp.azurewebsites.net',
+    'client_id' => '33e1f48d-8071-4f3a-b8b5-3d0948f9a93d',
+    'client_secret' => 'ICALeUurpuzYfGxh38VJLGeLlC5NtYgCyT+l4/nudfY=',
+    'redirect_uri' => 'https://localhost:7284/signin-oidc',
     'scopes' => ['openid', 'profile', 'email'],
-    'end_session_endpoint' => 'https://id.demo.operlity.com/connect/endsession'
+    'end_session_endpoint' => 'https://ogsiamapp.azurewebsites.net/connect/endsession'
 ];

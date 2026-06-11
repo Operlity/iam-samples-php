@@ -6,7 +6,7 @@ Write-Host ''
 
 $PHP_EXE = 'D:\PHP Web App\tools\php\php.exe'
 $PHP_PORT = 8000
-$SSL_PORT = 4500
+$SSL_PORT = 7284
 
 if (Test-Path $PHP_EXE) {
     Write-Host '1. Starting PHP Server on http://localhost:8000...' -ForegroundColor Green
@@ -16,7 +16,7 @@ if (Test-Path $PHP_EXE) {
         & $path -S localhost:$port router.php
     } -ArgumentList $PHP_EXE, $PHP_PORT
 
-    Write-Host '2. Starting NodeJS HTTPS Proxy on https://localhost:4500...' -ForegroundColor Cyan
+    Write-Host '2. Starting NodeJS HTTPS Proxy on https://localhost:7284...' -ForegroundColor Cyan
     $proxyJob = Start-Job -ScriptBlock {
         cd 'D:\PHP Web App'
         node proxy.js
@@ -24,10 +24,10 @@ if (Test-Path $PHP_EXE) {
 
     Write-Host '3. Launching browser...' -ForegroundColor Yellow
     Start-Sleep -Seconds 3
-    Start-Process 'https://localhost:4500'
-
+    Start-Process 'https://localhost:7284'
+    
     Write-Host ''
-    Write-Host '✓ Application is running at https://localhost:4500' -ForegroundColor Green
+    Write-Host '✓ Application is running at https://localhost:7284' -ForegroundColor Green
     Write-Host 'Press Enter to stop all servers...' -ForegroundColor White
     Read-Host
     

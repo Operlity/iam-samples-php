@@ -38,6 +38,9 @@ try {
         $oidc->addScope($scope);
     }
 
+    // Force OIDC provider to show the login screen (bypass auto-login)
+    $oidc->addAuthParam(['prompt' => 'login']);
+
     // If we are at the redirect URI or if we are just starting the login
     // openid-connect-php handles the state check automatically
     $oidc->authenticate();
