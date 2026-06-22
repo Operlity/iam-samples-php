@@ -1,12 +1,13 @@
 <?php
 /**
- * IdentityHub Configuration
+ * IdentityHub Configuration Template
+ * Rename this file to config.php and fill in your actual credentials.
  */
 
 return [
     'issuer' => 'https://ogsiamapp.azurewebsites.net',
-    'client_id' => '33e1f48d-8071-4f3a-b8b5-3d0948f9a93d',
-    'client_secret' => 'ICALeUurpuzYfGxh38VJLGeLlC5NtYgCyT+l4/nudfY=',
+    'client_id' => 'your-client-id-here',
+    'client_secret' => 'your-client-secret-here',
     'redirect_uri' => 'https://localhost:7284/signin-oidc',
     'scopes' => ['openid', 'profile', 'email'],
     'end_session_endpoint' => 'https://ogsiamapp.azurewebsites.net/connect/endsession'

@@ -1,0 +1,18 @@
+{
+  "name": "iam-samples-php",
+  "version": "1.0.0",
+  "description": "IdentityHub PHP integration sample with SQLite Contact Management",
+  "main": "proxy.js",
+  "scripts": {
+    "start": "node -e \"const fs=require('fs'); const exec=require('child_process').execSync; const php=fs.existsSync('tools/php/php.exe')?'\\\"tools/php/php.exe\\\"':'php'; exec(php + ' start.php', {stdio: 'inherit'});\""
+  },
+  "keywords": [
+    "php",
+    "oidc",
+    "sqlite",
+    "identityhub",
+    "sample"
+  ],
+  "author": "Operlity",
+  "license": "MIT"
+}
